@@ -52,4 +52,26 @@ console.log(remainder)
 exponentiation = 2 ** 10
 console.log(exponentiation)
 
-// ターミナルで、node lesson1.js を実行すると出力される
+
+
+// 型を教えてくれる演算子
+console.log(typeof addition) // こっちが一般的らしい
+console.log(typeof(addition))
+
+
+
+// NaNとは
+// 数字じゃないということを教えてくれるnumberの仲間
+NotANumber = 0 / 0
+console.log(NotANumber)
+console.log(typeof NotANumber)
+// 数字+NaNもNaNになる
+Not = 1 + NaN
+console.log(Not)
+console.log(typeof Not)
+// もちろんNaN+NaNもNaNになる
+Not2 = NaN + NaN
+console.log(Not2)
+console.log(typeof Not2)
+
+
