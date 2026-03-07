@@ -12,3 +12,12 @@
 
 // npmのバージョンを確認する：
 // npm -v # "11.9.0"が表示される。
+
+
+// GitHubのリモートリポジトリに保存するためのコマンド
+// git init
+// git add .
+// git commit -m "first commit"
+// git remote add origin git@github.com:ユーザー名/リポジトリ名.git
+// git branch -M main
+// git push -u origin main
