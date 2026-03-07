@@ -24,3 +24,24 @@ console.log(total);
 // もう一回計算し直すと増えている
 total = hoge + moge;
 console.log(total);
+
+
+
+
+
+// 変数の更新について
+let score = 0;
+score = score + 5;
+console.log(score);
+// これの省略形がこれ
+score += 5;
+console.log(score);
+// +1ならさらに省略できる
+score++;
+console.log(score);
+// ちなみにscore++したときはまだ+1されていない。
+// ++scoreにすればその瞬間に+1される
+console.log(score++);
+console.log(score);
+console.log(++score);
+console.log(score);
