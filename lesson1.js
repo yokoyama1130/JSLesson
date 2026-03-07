@@ -29,49 +29,49 @@
 
 // 基本演算
 // 足し算
-addition = 1 + 1
-console.log(addition)
+let addition = 1 + 1;
+console.log(addition);
 
 // 引き算
-subtraction = 10 - 5
-console.log(subtraction)
+let subtraction = 10 - 5;
+console.log(subtraction);
 
 // 掛け算
-multiplication = 2 * 3
-console.log(multiplication)
+let multiplication = 2 * 3;
+console.log(multiplication);
 
 // 割り算
-division = 8 / 2
-console.log(division)
+let division = 8 / 2;
+console.log(division);
 
 // 余り
-remainder = 5 % 2
-console.log(remainder)
+let remainder = 5 % 2;
+console.log(remainder);
 
 // べき演算
-exponentiation = 2 ** 10
-console.log(exponentiation)
+let exponentiation = 2 ** 10;
+console.log(exponentiation);
 
 
 
 // 型を教えてくれる演算子
-console.log(typeof addition) // こっちが一般的らしい
-console.log(typeof(addition))
+console.log(typeof addition); // こっちが一般的らしい
+console.log(typeof(addition));
 
 
 
 // NaNとは
 // 数字じゃないということを教えてくれるnumberの仲間
-NotANumber = 0 / 0
-console.log(NotANumber)
-console.log(typeof NotANumber)
+let NotANumber = 0 / 0;
+console.log(NotANumber);
+console.log(typeof NotANumber);
 // 数字+NaNもNaNになる
-Not = 1 + NaN
-console.log(Not)
-console.log(typeof Not)
+let Not = 1 + NaN;
+console.log(Not);
+console.log(typeof Not);
 // もちろんNaN+NaNもNaNになる
-Not2 = NaN + NaN
-console.log(Not2)
-console.log(typeof Not2)
+let Not2 = NaN + NaN;
+console.log(Not2);
+console.log(typeof Not2);
 
 
