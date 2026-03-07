@@ -38,3 +38,35 @@ let numberString = 1 + "hoge";
 console.log(numberString);
 console.log(typeof numberString);
 
+
+
+
+// Stringのメソッド
+// 組み込みのStringメソッドで、文字列に対して便利な操作が実行できる
+// 例えば、文字列内を検索、文字列内の文字を置換、大文字小文字の変換ができる。
+// 使い方は、thing.method()
+// ↓例（toUpperCaseは文字列を全部大文字にしてくれるメソッド）
+let hello = "hello world";
+console.log(hello.toUpperCase());
+// もちろん変数の中身は変わっていいない
+console.log(hello);
+// 新しい変数に入れて実行するのが良い
+let upperHello = hello.toUpperCase();
+console.log(upperHello);
+// toLowerCaseは全部小文字にしてくれる
+let lowerHello = upperHello.toLowerCase();
+console.log(lowerHello);
+
+
+// trimメソッド（文字列の両端の空白を削除してくれるメソッド）
+let userNameInput = "    yamada    ";
+console.log(userNameInput);
+console.log(userNameInput.trim());
+
+
+// メソッドは連続で書くことができる
+let greeting = "    hello world!!!    "
+// これを大文字かつ両端の空白もなくすには（順番はどっちでも大丈夫）
+console.log(greeting.trim().toUpperCase());
+
+
