@@ -15,3 +15,7 @@ let lottoNums = [19, 22, 56, 12, 51];
 // ごちゃ混ぜの配列
 let stuff = [true, 68, "cat", null];
 
+
+// 配列の長さ
+let days = ["Monaday", "Tuesday", "Wednesday"];
+console.log(days.length);
