@@ -19,3 +19,27 @@ for(let i = 1; i <= 10; i++) {
     console.log("ループ中！！！")
     console.log(i);
 }
+
+
+// 偶数を出すようなループ（自分で考えたやつ）
+for (let i = 0; i <= 20; i++) {
+    if (i % 2 === 0) {
+        console.log(i);
+    }
+}
+
+// 偶数を出すようなループ（答え）
+for (let i = 0; i <= 20; i += 2) {
+    console.log(i);
+}
+
+
+// 減らしてしくループ
+for (let i = 100; i >= 0; i -= 10) {
+    console.log(i);
+}
+
+// あんまやらないけど
+for (let i = 10; i <= 1000; i *= 10) {
+    console.log(i);
+}
