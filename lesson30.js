@@ -18,3 +18,16 @@ midterms.saburo = "B+";
 console.log(midterms);
 midterms["shiro"] = "A-";
 console.log(midterms);
+
+
+
+// 配列とオブジェクト
+const comments = [
+    {username: "yamada", text: "こんにちは", votes: 9},
+    {username: "tanaka", text: "こんばんは", votes: 123}
+];
+
+console.log(comments);
+
+// tanakaさんのこんばんはにアクセスしたい時
+console.log(comments[1].text);
