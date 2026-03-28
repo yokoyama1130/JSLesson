@@ -17,3 +17,36 @@ const cat = {
     isHugry: true
 };
 console.log(cat);
+
+
+// オブジェクトのデータにアクセスする（キーでアクセスする。StringっぽくないけどStringでアクセスする）
+console.log(person["firstName"]);
+console.log(person["lastName"]);
+
+console.log(cat["color"]);
+
+// キーがない時はエラーが出る
+// console.log(cat[colors]);
+
+// .を使う方法もある
+console.log(person.firstName);
+console.log(person.lastName);
+
+
+// オブジェクトのキーはStringに変換される（symbolは例外）
+const years = {1999: "good", 2020: "bad"};
+console.log(years);
+// stringに変換されるからどっちでも大丈夫
+console.log(years["1999"]);
+console.log(years[1999]);
+
+
+const birthYear = 1999;
+// これはできない。personの中の関数orキーを探してしまう
+console.log(years.birthYear);
+// []これを使えばできる
+console.log(years[birthYear]);
+// これと同じになる
+console.log(years["1999"]);
+
+
