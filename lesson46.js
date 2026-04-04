@@ -170,3 +170,93 @@ console.log(result2);
 
 // reduce
 // 配列の各要素に対して（引数で与えられた）reduce関数を実行して、「単一の出力値」を生成する。
+const reduce1 = [3, 5, 7, 9,11].reduce((accumulator, currentValue) => {
+    return accumulator + currentValue;
+});
+console.log(reduce1);
+
+// 他の例
+const prices = [980, 1500, 1980, 4980, 2980];
+// 一旦合計を求めるか
+let total = 0;
+for (let price of prices) {
+    total += price;
+}
+console.log(total); // 12420
+// これをreduceを使って書くと
+const total2 = prices.reduce((total, price) => total + price);
+console.log("reduce使ったやつ");
+console.log(total2);
+
+// もっとすごいことができる
+// 例えば配列の中の最小値を求めたかったら
+const minPrice = prices.reduce((min, price) => {
+    if(min > price) {
+        return price;
+    }
+    return min;
+});
+console.log("reduceを使った配列の最小値");
+console.log(minPrice);
+
+// オブジェクトとreduce
+const yokoyamaBestMovie = [
+    {
+        title: "レオン",
+        score: 99,
+        years: 1999
+    },
+    {
+        title: "3丁目の夕日",
+        score: 100,
+        years: 2000
+    },
+    {
+        title: "タイタニック",
+        score: 98,
+        years: 1980
+    },
+    {
+        title: "ウルフオブウォールストリート",
+        score: 90,
+        years: 1990
+    },
+    {
+        title: "ララランド",
+        score: 89,
+        years: 2024
+    }
+];
+const bestMovies = yokoyamaBestMovie.reduce((highScore, currentScore) => {
+    if (highScore.score > currentScore.score) {
+        return highScore;
+    }
+    return currentScore;
+});
+console.log("一番スコアが高い映画");
+console.log(bestMovies);
+
+// reduceに渡せる初期値
+const evens = [2, 4, 6, 8];
+// reduceの2個目の引数に初期値を与えることができる。
+const sum = evens.reduce((sum, num) => sum + num, 100);
+console.log(`初期値ありのreduce ${sum}`);
+
+
+
+// アロー関数とthis
+// アロー関数と普通の関数ではthisが違うよーってことを覚えておこう！！！
+const person = {
+    firstName: "Tora",
+    lastName: "Yamada",
+    // 今までの書き方
+    // fullName: function() {
+    //     return `${this.lastName} ${this.firstName}`;
+    // }
+    // ここをアロー関数で書くとthisの位置がwindowになる。
+    fullName: () => {
+        return `${this.lastName} ${this.firstName}`;
+    }
+}
+console.log(person.fullName());
+
