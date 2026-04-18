@@ -28,3 +28,7 @@
 
 // querySelectorAll
 // querySelector同様だが、対象となる要素全てを取得するセレクターメソッド
+
+
+// getAttributeは属性を取ってくる
+// .hrefにするとフルのURLを取ってきちゃうけどgetAttributeはHTMLに書いてある生のURLを取ってこれる
